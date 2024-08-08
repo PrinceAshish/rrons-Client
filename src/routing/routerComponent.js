@@ -22,6 +22,7 @@ import {
 } from '../pages';
 import { Provider } from 'react-redux';
 import store from '../store';
+import Dashboard from '../pages/Recruiter/Dashboard/Dashboard';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -78,6 +79,10 @@ const router = createBrowserRouter(
 			<Route
 				path="error"
 				element={<ErrorPage />}
+			></Route>
+			<Route
+				path="recruiter/dashboard"
+				element={<Dashboard/>}
 			></Route>
 		</>
 	)
